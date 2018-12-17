@@ -28,6 +28,7 @@ jobs:
         - ./mvnw clean
         # Restore desired JDK
         - export JAVA_HOME=$ORIGINAL_JAVA_HOME
+        - java --version
     - name: Java 7
       jdk: openjdk7
     - name: Java 8
