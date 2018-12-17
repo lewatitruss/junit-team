@@ -3,7 +3,7 @@ language: java
 script: ./mvnw verify javadoc:javadoc site:site
 
 install:
-- java -version
+- ./mvnw --version
 
 stages:
   - test
@@ -28,7 +28,7 @@ jobs:
         - ./mvnw clean
         # Restore desired JDK
         - export JAVA_HOME=$ORIGINAL_JAVA_HOME
-        - java --version
+        - ./mvnw --version
     - name: Java 7
       jdk: openjdk7
     - name: Java 8
