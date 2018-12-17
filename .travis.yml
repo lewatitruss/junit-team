@@ -3,7 +3,7 @@ language: java
 script: ./mvnw verify javadoc:javadoc site:site
 
 install:
-- java --version
+- java -version
 
 stages:
   - test
